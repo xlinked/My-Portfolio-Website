@@ -12,41 +12,62 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Changa&family=Courgette&family=Exo&family=Genos:wght@500&family=Old+Standard+TT:ital@1&family=Rokkitt:wght@500&family=Syncopate:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Changa&family=Courgette&family=Exo&family=Genos:wght@500&family=Krona+One&family=Old+Standard+TT:ital@1&family=Orbitron:wght@800&family=Outfit&family=Rokkitt:wght@500&family=Syncopate:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script async src="https://api.countapi.xyz/hit/tynelson.ca/visits?callback=liveViews"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 	<body>
-        <nav> 
-            <!-- Desktop Nav -->
-            <div id="nav-links-container">
-                <div class="nav-links">
-                    <a href="#nav-logo" class="active">Home<span>◇</span></a>
-                    <a href="#about-container" class="active">About<span>◇</span></a>
-                    <a href="#skill-container" class="active">Skills<span>◇</span></a>
-                    <a href="#portfolio-container" class="active">Projects<span>◇</span></a>
-                    <a href="#contact-container" class="active">Contact</a>
+        <div id="loader">
+            <div class="center">
+                <div class="one">
+                    <img class="loadingLogo" src="Images/loadingLogo.png">
                 </div>
             </div>
-            
-            <div id="nav-logo">
-                <img src="Images/mylogo.png" alt="TN Logo">
-            </div>
-            <!-- Hamburger Icon -->
-            <div class="navbar">
-                <div class="hamburger-menu">
-                    <div class="line line-1"></div>
-                    <div class="line line-2"></div>
-                    <div class="line line-3"></div>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#nav-logo" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#about-container" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#skill-container" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#portfolio-container" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#contact-container" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-        </nav> 
+        </div>
+
+        <header id="Top">
+                <!-- Desktop Nav -->
+                <nav class="desktop-nav-container">
+                    <div class="nav-logo">
+                        <a href="#Top">
+                            <img src="Images/mylogo.png" alt="TN Logo">
+                        </a>
+                    </div>
+                    <div class="nav-links">
+                        <a href="#Top">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#portfolio">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </nav>
+                
+                <!-- Mobile Nav -->
+                <nav class="mobile-nav-container">
+                    <div class="mobile-inner-container">
+                        <div class="nav-logo">
+                            <a href="#Top">
+                                <img src="Images/mylogo.png" alt="TN Logo">
+                            </a>                        
+                        </div>                
+                        <div class="hamburger-menu">
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </div>
+                    </div>
+                    
+                    <ul class="nav-list">
+                        <li><a href="#Top" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+        </header>
+         
         <main id="background-img">
             <div id="main-intro">
                 <span id="hi">Hi there, I'm</span>
@@ -54,13 +75,17 @@
                 <span id="name">Tyler<br>Nelson</span>
                 <div id="top-underline"></div>
                 <br>
-                <span id="full-stack"></span>
-                <p>I am a British Columbia based Software Developer that 
-                    loves to write code and learn about new technologies. 
-                    I enjoy creating and building new applications for 
-                    desktop and mobile devices.
+
+                <div class="second"> 
+                    <p class="first">Full Stack <span>Developer</span></p>
+                </div>
+
+                <p>I am a <span>Vancouver, British Columbia</span> based <span>Software Developer</span> that 
+                    loves to <span>write code</span> and learn about new and upcoming <span>technology</span>. 
+                    I enjoy designing, creating and building new <span>applications</span> for 
+                    <span>desktop</span> and <span>mobile devices</span>.
                 </p>                      
-                <a href="#contact-container">
+                <a href="#contact">
                     <button type="click">Let's Chat</button>
                 </a> 
             </div>
@@ -73,18 +98,22 @@
             </div>
         </main>
 
-        <div id="about-container">
+        <div id="about">
             <div id="about-inner-container">
                 <div id="about-grid-1">
                     <h1><span>▷ </span>About</h1>
                     <div id="about-underline"></div>          
-                    <p><img src="Images/cartoonTyler.png" alt="Photo of Tyler">                
-                        I've always had a huge interest in technology and ever since the iphone 
-                        was released in 2007, I knew that I was one day going to be a software developer.                 
-                        I am very creative, innovative and determined. If I don't have the solution for a problem, I'll find it.<br>
-                        <br>When I'm not sitting in front of a computer I'm out hiking, traveling, exercising,
-                        spending time with my friends and family, trying new things and keeping a healthy lifestyle.
-                    </p>
+                    <p><img src="Images/cartoonTyler.png" alt="Photo of Tyler"> 
+                        I've always been interested in <span>technology</span> and how things work 
+                        so throughout my life I was happy to be the <span>tech guy</span> for my 
+                        friends and family. I always knew one day I would become a 
+                        <span>Software Developer</span> as I am very <span>creative, innovative,</span> and <span>determined.</span> 
+                        If I don't have the <span>solution</span> for a <span>problem</span>, I'll find it. 
+                        </p>
+                        <p>
+                        When I'm not sitting in front of a <span>computer</span> I'm out hiking, traveling, exercising, 
+                        spending time with my friends and family, trying new things, and keeping 
+                        a healthy lifestyle.</p>
                 </div>
                 <div id="about-grid-2">
                     <img src="Images/cartoonTyler.png" alt="Photo of Tyler">                
@@ -92,47 +121,40 @@
             </div>                 
         </div>
              
-        <div id="skill-container">
+        <div id="skills">
             <div id="skill-inner-container">
                 <h1><span>▷ </span>Skills</h1>
                 <div id="skill-underline"></div>
-                <p>Throughout my journey of becoming a Software Developer, I have
-                    worked with many different languages, platforms and frameworks. 
-                    This has given me the ability to learn new technologies quickly 
+                <p>Throughout my journey of becoming a <span>Software Developer</span>, I have
+                    worked with many different <span>languages, platforms</span> and <span>frameworks</span>. 
+                    This has given me the ability to learn new <span>technologies</span> quickly 
                     and efficiently. And given me a solid understanding of 
-                    application development for computer, web and mobile environments.
+                    <span>application development</span> for <span>computer, web</span> and <span>mobile environments</span>.
                     </p>
-                <p>Here is a current list of all the technologies I have worked with. I have more 
+                <p>Here is a current list of the <span>technologies</span> I've been working with lately. I have more 
                     experience in some than others, but I am familiar with them all.
                     </p>
             </div>
-            <br>
+            
             <div class="grid-container">
                 <div class="grid">
                     <div id="frontendBg">
                         <img src="Images/frontendBg.png">
                     </div>
-                    <h2>Front End</h2>
+                    <h1>Front End</h1>
                     <ul>
                         <li><span>▷ </span>HTML/CSS</li>
                         <li><span>▷ </span>JavaScript</li>
                         <li><span>▷ </span>JQuery</li>
                         <li><span>▷ </span>Swift</li>
                     </ul>
-                    <div id="bulb">
-                        <img src="Images/lightBulb.png">
-                        <img src="Images/lightOn.png">
-                    </div>
                 </div>
                 <div class="grid">
                     <div id="backendBg">
                         <img src="Images/backendScript.png">
                     </div>
-                    <h2>Back End</h2>
+                    <h1>Back End</h1>
                     <ul>
-                        <div id="gear-1">
-                            <img src="Images/gear-1.png">
-                        </div>
                         <li><span>▷ </span>PHP</li>
                         <li><span>▷ </span>C#</li>
                         <li><span>▷ </span>Java</li>
@@ -142,28 +164,26 @@
                 </div>
                 <div class="grid">
                     <div id="databaseBg">
-                        <img src="Images/databaseBg.png">
-                        <img src="Images/glowingCloud.png">
-                    </div>
-                    <h2>Database</h2>
-                    <ul>
                         <img src="Images/database.png">
+                    </div>
+                    <h1>Database</h1>
+                    <ul>
+                        <li><span>▷ </span>AWS</li>
                         <li><span>▷ </span>MySQL</li>
                         <li><span>▷ </span>MongoDB</li>
-                        <li><span>▷ </span>AWS</li>
                     </ul>
                 </div>
             </div>  
         </div>  
 
-        <div id="portfolio-container">
+        <div id="portfolio">
             <div id="portfolio-inner-container">
                 <div id="portfolio-grid-1">
                     <h1><span>▷ </span>Portfolio</h1>
                     <div id="portfolio-underline"></div>      
                     <p>Here are a few projects that I have created within the last few months. 
                         If you're interested in having a look at all of my projects, please check 
-                        out my GitHub. I have more projects there that have been created with other programming languages.
+                        out my <span>GitHub</span>. I have many other projects there that have been created using other <span>programming languages</span>.
                     </p>
                 </div>
                 <div id="portfolio-grid-2">
@@ -180,9 +200,9 @@
                         <p>This was a contract website I created for a Kelowna based company that specializes in concrete forming and finishing.
                             They wanted a website that was modern and that had blue highlights to match with the company logo.</p>	
                         <ul>
-                            <li><span>▻ </span>HTML/CSS</li>
-                            <li><span>▻ </span>JavaScript</li>
-                            <li><span>▻ </span>AWS</li>
+                            <li><span>▷ </span>HTML/CSS</li>
+                            <li><span>▷ </span>JavaScript</li>
+                            <li><span>▷ </span>AWS</li>
                         </ul>
                         <div class="otherDevices">
                             <a target="_blank" href="https://hilltopformandfinish.ca"> <img src="Images/otherDevices.png" alt="Hill Top Form & Finish Website Image"></a>
@@ -196,13 +216,13 @@
                     <div class="project">  
                         <h1><span>▷ </span>R.Cam Contracting</h1>    
                         <p>This was a contract website I created for a company to showcase their work
-                            and offer their contracting services. The site has increased the
+                            and offer their contracting services. The website has increased the
                             companies clientele as well as brought in new employees. 
                         </p>	
                         <ul>
-                            <li><span>▻ </span>HTML/CSS</li>
-                            <li><span>▻ </span>JavaScript</li>
-                            <li><span>▻ </span>AWS</li>
+                            <li><span>▷ </span>HTML/CSS</li>
+                            <li><span>▷ </span>JavaScript</li>
+                            <li><span>▷ </span>AWS</li>
                         </ul>	
                         <div class="otherDevices">
                             <a target="_blank"  href="https://rcamcontracting.com"><img src="Images/rcamOtherDevices.png" alt="Rcam Contracting Website Image"></a>
@@ -217,15 +237,15 @@
                         <h1><span>▷ </span>Chatter Box 2</h1>                           
                         <p>This school project that I created has a user registration and login page.
                             The user can create and edit their profiles. It also has a main chat 
-                            room that saves the messages to MongoDB as well as a private chat.
+                            room that saves the messages to MongoDB as well as a private chat does not save to the database.
                         </p>	
                         <ul>
-                            <li><span>▻ </span>Node.js</li>
-                            <li><span>▻ </span>Express.js</li>
-                            <li><span>▻ </span>JavaScript</li>
-                            <li><span>▻ </span>Mongoose</li>
-                            <li><span>▻ </span>HTML/CSS</li>
-                            <li><span>▻ </span>MongoDB</li>
+                            <li><span>▷ </span>Node.js</li>
+                            <li><span>▷ </span>Express.js</li>
+                            <li><span>▷ </span>JavaScript</li>
+                            <li><span>▷ </span>Mongoose</li>
+                            <li><span>▷ </span>HTML/CSS</li>
+                            <li><span>▷ </span>MongoDB</li>
                         </ul>
                         <div class="otherDevices">
                             <a target="_blank" href="https://github.com/xlinked"><img src="Images/chatterBoxOtherDevices.png" alt="Chat application"></a>
@@ -239,16 +259,16 @@
                     <div class="project">  
                         <h1><span>▷ </span>Chatter Box</h1>    
                         <p>This was a school project I created that has a user registration and login page.
-                            It also has a chat room that saves the messages to MySQL. Fun 
-                            application for sending messages between friends.
+                            It also has a chat room that saves the messages to MySQL. This was a great project 
+                            that got me very familar with PHP. Fun application for sending messages between friends.
                         </p>	
                         <ul>
-                            <li><span>▻ </span>HTML/CSS</li>
-                            <li><span>▻ </span>JavaScript</li>
-                            <li><span>▻ </span>Ajax</li>
-                            <li><span>▻ </span>jQuery</li>
-                            <li><span>▻ </span>PHP</li>
-                            <li><span>▻ </span>MySql</li>
+                            <li><span>▷ </span>HTML/CSS</li>
+                            <li><span>▷ </span>JavaScript</li>
+                            <li><span>▷ </span>Ajax</li>
+                            <li><span>▷ </span>jQuery</li>
+                            <li><span>▷ </span>PHP</li>
+                            <li><span>▷ </span>MySql</li>
                         </ul>
                         <div class="otherDevices">
                             <a target="_blank" href="https://github.com/xlinked"><img src="Images/phpChatterBoxOtherDevice.png" alt="Messaging app"></a>
@@ -259,11 +279,12 @@
                 </div>
             </div>
 
-            <div id="contact-container">
-                <div id="left-contact">
-                    <h3>For any enquiries, or just to say hello, get in touch by contacting me today.
+            <div id="contact">
+                <div class="left-contact">
+                    <h3 class="lcSlide">For any enquiries, or just to say hello, get in touch by contacting me today.
                     </h3>                  
                 </div>
+                
                 <div class="contact">
                     <h2 id="error">Contact</h2>
                     <div class="contact-underline"></div>
@@ -320,26 +341,22 @@
                         </div>
                     </form>
                 </div>
-            </div><!-- END of Contact-container -->
+            </div><!-- END of Contact -->
         </div> <!-- END of Container -->
         <footer>
-            <h1>Follow me</h1>
-            <div id="social-mobile">
-                <a target="_blank" href="https://twitter.com/Tyler96774133"><i class="fa fa-twitter" aria-hidden="true"></i></a> &nbsp;
-                <a target="_blank" href="https://www.youtube.com/channel/UClrhpEFdRJNEVys61S8sNIg"><i class="fa fa-youtube" aria-hidden="true"></i></a> &nbsp;
-                <a target="_blank" href="mailto:TyNelson84@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> &nbsp;
-                <a target="_blank" href="https://github.com/xlinked"><i class="fa fa-github" aria-hidden="true"></i></a> &nbsp;
-                <a target="_blank" href="https://www.linkedin.com/in/tyler-nelson-a77846217/"><i class="fa fa-linkedin"></i></a> &nbsp;
+            <h4>Follow me</h4>
+            <div id="socials">
+                <a target="_blank" href="https://twitter.com/Tyler96774133"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UClrhpEFdRJNEVys61S8sNIg"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                <a target="_blank" href="mailto:TyNelson84@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://github.com/xlinked"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/tyler-nelson-a77846217/"><i class="fa fa-linkedin"></i></a>
             </div> 
             <br>
             <div id="logo">
-                <img src="Images/mylogo.png" alt="TN Logo">
-            </div>
-
-            <div class="arrow-btn">
-                <a data-scroll href="#nav-logo">
-                <div class="arrow"></div></a>
-                <p>Ride up</p>
+                <a href="#Top">
+                    <img src="Images/mylogo.png" alt="TN Logo">
+                </a>            
             </div>
 
             <div id="copyright">
@@ -350,5 +367,28 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
         <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            //Loader screen effect
+            $(document).ready(function() {
+                $("#loader").delay(3000).fadeOut("slow");
+                $(".loadingLogo").hide().fadeIn(2500);
+            });
+        </script>       
+        <script>
+            $("a").on("click", function(e) {
+                if (this.hash !== "") {
+                    e.preventDefault();
+                    const hash = this.hash;
+
+                    $("html, body").animate(
+                        {
+                            scrollTop: $(hash).offset().top
+                        }, 
+                        1000
+                    );
+                }
+            });
+        </script> 
 	</body>
 </html>
